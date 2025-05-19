@@ -84,7 +84,7 @@ export default function Hero() {
                 Contact Me <ArrowDown className="h-4 w-4" />
               </Button>
             </Link>
-            <Link href="https://github.com/bahnuteja3264" target="_blank">
+            <Link href="https://github.com/bhanuteja3264" target="_blank">
               <Button
                 variant="outline"
                 size="lg"

@@ -190,7 +190,7 @@ export default function Contact() {
                 <div>
                   <h3 className="font-medium">GitHub</h3>
                   <Link
-                    href="https://github.com/bahnuteja3264"
+                    href="https://github.com/bhanuteja3264"
                     target="_blank"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
