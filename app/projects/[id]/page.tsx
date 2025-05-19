@@ -15,7 +15,11 @@ interface ProjectDetailProps {
     id: string
   }
 }
-
+export async function generateStaticParams() {
+  return projects.map((project) => ({
+    id: project.id,
+  }))
+}
 export default function ProjectDetail({ params }: ProjectDetailProps) {
   const project = projects.find((p) => p.id === params.id)
 
