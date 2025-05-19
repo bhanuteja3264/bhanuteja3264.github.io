@@ -6,7 +6,10 @@ import { Badge } from "@/components/ui/badge"
 import { ArrowLeft, Github, ExternalLink } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
-import { motion } from "framer-motion"
+import dynamic from "next/dynamic"
+
+// 🔧 Dynamically load AnimatedCard (client component)
+const AnimatedCard = dynamic(() => import("@/components/AnimatedCard"), { ssr: false })
 
 interface ProjectDetailProps {
   params: {
@@ -36,7 +39,7 @@ export default function ProjectDetail({ params }: ProjectDetailProps) {
           </Button>
         </Link>
 
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+        <AnimatedCard>
           <Card className="border-2 border-blue-200 dark:border-blue-700 shadow-[0_0_15px_rgba(59,130,246,0.4)] dark:shadow-[0_0_20px_rgba(59,130,246,0.5)] bg-white/90 backdrop-blur-sm dark:bg-slate-800/90">
             <div className="h-2 bg-gradient-to-r from-blue-500 to-purple-500" />
 
@@ -108,7 +111,7 @@ export default function ProjectDetail({ params }: ProjectDetailProps) {
               )}
             </CardFooter>
           </Card>
-        </motion.div>
+        </AnimatedCard>
       </div>
     </div>
   )
