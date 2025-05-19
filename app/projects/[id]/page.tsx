@@ -1,26 +1,24 @@
-// app/projects/[id]/page.tsx
-
 import { notFound } from "next/navigation"
 import { projects } from "@/data/projects"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
 import { ArrowLeft, Github, ExternalLink } from "lucide-react"
+import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
 
-export async function generateStaticParams() {
-  return projects.map((project) => ({
-    id: project.id,
-  }))
+interface ProjectDetailProps {
+  params: {
+    id: string
+  }
 }
 
-export default function ProjectDetail({ params }: { params: { id: string } }) {
+export default function ProjectDetail({ params }: ProjectDetailProps) {
   const project = projects.find((p) => p.id === params.id)
 
   if (!project) {
-    notFound()
+    return notFound()
   }
 
   return (
@@ -44,7 +42,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
 
             {project.imageSrc && (
               <div className="relative w-full h-64 md:h-80">
-                <Image src={project.imageSrc} alt={project.title} fill className="object-cover" />
+                <Image src={project.imageSrc || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
               </div>
             )}
 
