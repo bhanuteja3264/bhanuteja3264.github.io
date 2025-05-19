@@ -9,6 +9,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+   basePath: '/bhanuteja3264.github.io',
+  assetPrefix: '/bhanuteja3264.github.io',
 }
 
 export default nextConfig
