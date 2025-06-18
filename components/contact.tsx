@@ -194,7 +194,7 @@ export default function Contact() {
                     target="_blank"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    github.com/bahnuteja3264
+                    github.com/bhanuteja3264
                   </Link>
                 </div>
               </div>

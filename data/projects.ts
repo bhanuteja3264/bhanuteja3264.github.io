@@ -25,7 +25,7 @@ export const projects = [
     ],
     technologies: ["BERT", "NLP", "Flask API", "Machine Learning", "Python", "TensorFlow"],
     githubUrl: "https://github.com/bhanuteja3264/depression_detect_app.git",
-    imageSrc: "/placeholder.svg?height=400&width=600", // Placeholder for project image
+    imageSrc: "/images/depression-detection.png",
   },
   {
     id: "tumor-classifier",
@@ -52,7 +52,7 @@ export const projects = [
     ],
     technologies: ["Deep Learning", "CNN", "Medical Imaging", "Python", "TensorFlow", "OpenCV"],
     githubUrl: "https://github.com/bhanuteja3264/tumor-classifier.git",
-    imageSrc: "/placeholder.svg?height=400&width=600", // Placeholder for project image
+    imageSrc: "/images/brain-tumor.png",
   },
   {
     id: "object-tracker",
@@ -79,7 +79,7 @@ export const projects = [
     ],
     technologies: ["YOLO", "SORT Algorithm", "OpenCV", "Python", "Computer Vision", "Kalman Filter"],
     githubUrl: "https://github.com/bhanuteja3264/object_tracker.git",
-    imageSrc: "/placeholder.svg?height=400&width=600", // Placeholder for project image
+    imageSrc: "/images/object-tracking.jpeg",
   },
   {
     id: "voting-system",
@@ -106,7 +106,7 @@ export const projects = [
     ],
     technologies: ["Java", "Vaadin Framework", "Frontend Development", "Security", "Authentication"],
     githubUrl: "https://github.com/bhanuteja3264/Voting-System.git",
-    imageSrc: "/placeholder.svg?height=400&width=600", // Placeholder for project image
+    imageSrc: "/images/voting-system.png",
   },
   {
     id: "event-calendar",
@@ -133,7 +133,7 @@ export const projects = [
     ],
     technologies: ["System Design", "Automation", "Dashboard", "Notifications", "UI/UX"],
     githubUrl: "https://github.com/bhanuteja3264/Event-Calendar.git",
-    imageSrc: "/placeholder.svg?height=400&width=600", // Placeholder for project image
+    imageSrc: "/images/event-calendar.png",
   },
   {
     id: "movie-booking",
@@ -160,7 +160,7 @@ export const projects = [
     ],
     technologies: ["React.js", "PhonePe Integration", "UI/UX", "Authentication", "Payment Gateway"],
     githubUrl: "https://github.com/bhanuteja3264/MovieBookingWebsite.git",
-    imageSrc: "/placeholder.svg?height=400&width=600", // Placeholder for project image
+    imageSrc: "/images/movie-booking.png",
   },
   {
     id: "portfolio",
@@ -188,6 +188,7 @@ export const projects = [
     technologies: ["React", "Next.js", "Tailwind CSS", "Framer Motion", "Responsive Design"],
     githubUrl: "https://github.com/bhanuteja3264/Portfolio.git",
     liveUrl: "#",
-    imageSrc: "/placeholder.svg?height=400&width=600", // Placeholder for project image
+    imageSrc:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-19%20at%2017.53.30_bee70577.jpg-JYR946OrxHNgPS03APBEiq7T1RdI5Z.jpeg",
   },
 ]

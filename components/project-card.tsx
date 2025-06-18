@@ -68,6 +68,7 @@ export default function ProjectCard({
                 alt={title}
                 fill
                 className="object-cover transition-transform duration-500 hover:scale-105"
+                unoptimized
               />
             </div>
           )}
@@ -130,7 +131,7 @@ export default function ProjectCard({
           <DialogHeader>
             {imageSrc && (
               <div className="relative w-full h-56 mb-4 overflow-hidden rounded-md">
-                <Image src={imageSrc || "/placeholder.svg"} alt={title} fill className="object-cover" />
+                <Image src={imageSrc || "/placeholder.svg"} alt={title} fill className="object-cover" unoptimized />
               </div>
             )}
             <DialogTitle className="text-2xl">{title}</DialogTitle>

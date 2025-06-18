@@ -77,7 +77,7 @@ export default function About() {
                   📞 +91 99490 10340
                   <br />📧 bhanutejaybt.2004@gmail.com
                   <br />🌐 linkedin.com/in/bhanutejay
-                  <br />💻 github.com/bahnuteja3264
+                  <br />💻 github.com/bhanuteja3264
                 </p>
               </div>
             </div>

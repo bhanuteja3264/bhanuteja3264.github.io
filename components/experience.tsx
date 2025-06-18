@@ -50,16 +50,20 @@ export default function Experience() {
               <CardContent className="space-y-4">
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                   <li>
-                    Designed and implemented a psychometric test to assess students’ abilities and interests for personalized career guidance.
+                    Designed and implemented a psychometric test to assess students' abilities and interests for
+                    personalized career guidance.
                   </li>
                   <li>
-                    Created informative YouTube content to promote mental wellness and awareness about career planning, reaching students from various colleges.
+                    Created informative YouTube content to promote mental wellness and awareness about career planning,
+                    reaching students from various colleges.
                   </li>
                   <li>
-                    Organized outreach initiatives to engage students across institutions, encouraging participation in career exploration activities.
+                    Organized outreach initiatives to engage students across institutions, encouraging participation in
+                    career exploration activities.
                   </li>
                   <li>
-                    Planned and conceptualized the structure for a dedicated website focused on career guidance and student mental health support.
+                    Planned and conceptualized the structure for a dedicated website focused on career guidance and
+                    student mental health support.
                   </li>
                 </ul>
               </CardContent>
