@@ -1,18 +1,6 @@
 {
   "compilerOptions": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-=======
     "lib": ["dom", "dom.iterable", "esnext"],
->>>>>>> 8f87b45b7eac1264148a3f8ee76157ff0ffec532
-=======
-    "lib": ["dom", "dom.iterable", "esnext"],
->>>>>>> c268443 (Local changes before pull --rebase)
     "allowJs": true,
     "target": "ES6",
     "skipLibCheck": true,
@@ -31,11 +19,7 @@
       }
     ],
     "paths": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"]
     }
   },
   "include": [
@@ -48,16 +32,4 @@
   "exclude": [
     "node_modules"
   ]
-=======
-=======
->>>>>>> c268443 (Local changes before pull --rebase)
-      "@/*": ["./*"]
-    }
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
-<<<<<<< HEAD
->>>>>>> 8f87b45b7eac1264148a3f8ee76157ff0ffec532
-=======
->>>>>>> c268443 (Local changes before pull --rebase)
 }
