@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { notFound } from "next/navigation"
 import { projects } from "@/data/projects"
 import { ArrowLeft, Github, ExternalLink } from "lucide-react"
@@ -27,6 +28,8 @@ export default function ProjectDetail({ params }: Props) {
     <div className="min-h-screen py-20 relative">
       {/* Background Gradients */}
 =======
+=======
+>>>>>>> c268443 (Local changes before pull --rebase)
 "use client"
 
 import { useEffect, useState } from "react"
@@ -80,11 +83,15 @@ export default function ProjectDetail() {
 
   return (
     <div className="min-h-screen py-20 relative">
+<<<<<<< HEAD
 >>>>>>> 8f87b45b7eac1264148a3f8ee76157ff0ffec532
+=======
+>>>>>>> c268443 (Local changes before pull --rebase)
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50/70 to-pink-50/60 dark:from-blue-900/20 dark:via-purple-900/10 dark:to-pink-900/20"></div>
       <div className="absolute inset-0 bg-grid-pattern-light dark:bg-grid-pattern-dark opacity-30 dark:opacity-10 pointer-events-none"></div>
 
       <div className="container max-w-4xl mx-auto px-4 relative z-10">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <Link href="/#projects">
           <Button
@@ -95,6 +102,8 @@ export default function ProjectDetail() {
           </Button>
         </Link>
 =======
+=======
+>>>>>>> c268443 (Local changes before pull --rebase)
         <Button
           variant="outline"
           onClick={() => router.push("/#projects")}
@@ -102,7 +111,10 @@ export default function ProjectDetail() {
         >
           <ArrowLeft className="mr-2 h-4 w-4" /> Back to Projects
         </Button>
+<<<<<<< HEAD
 >>>>>>> 8f87b45b7eac1264148a3f8ee76157ff0ffec532
+=======
+>>>>>>> c268443 (Local changes before pull --rebase)
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
           <Card className="border-2 border-blue-200 dark:border-blue-700 shadow-[0_0_15px_rgba(59,130,246,0.4)] dark:shadow-[0_0_20px_rgba(59,130,246,0.5)] bg-white/90 backdrop-blur-sm dark:bg-slate-800/90">
@@ -111,10 +123,14 @@ export default function ProjectDetail() {
             {project.imageSrc && (
               <div className="relative w-full h-64 md:h-80">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <Image src={project.imageSrc} alt={project.title} fill className="object-cover" />
 =======
                 <Image src={project.imageSrc || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
 >>>>>>> 8f87b45b7eac1264148a3f8ee76157ff0ffec532
+=======
+                <Image src={project.imageSrc || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
+>>>>>>> c268443 (Local changes before pull --rebase)
               </div>
             )}
 
@@ -131,17 +147,23 @@ export default function ProjectDetail() {
               </CardDescription>
             </CardHeader>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             <CardContent className="space-y-6 text-muted-foreground">
               <div>
                 <h3 className="text-xl font-medium mb-3">Project Overview</h3>
                 <ul className="list-disc list-inside space-y-3">
 =======
+=======
+>>>>>>> c268443 (Local changes before pull --rebase)
             <CardContent className="space-y-6">
               <div>
                 <h3 className="text-xl font-medium mb-3">Project Overview</h3>
                 <ul className="list-disc list-inside space-y-3 text-muted-foreground">
+<<<<<<< HEAD
 >>>>>>> 8f87b45b7eac1264148a3f8ee76157ff0ffec532
+=======
+>>>>>>> c268443 (Local changes before pull --rebase)
                   {project.description.map((item: string, i: number) => (
                     <li key={i}>{item}</li>
                   ))}
@@ -152,10 +174,14 @@ export default function ProjectDetail() {
                 <div>
                   <h3 className="text-xl font-medium mb-3">Key Features</h3>
 <<<<<<< HEAD
+<<<<<<< HEAD
                   <ul className="list-disc list-inside space-y-2">
 =======
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
 >>>>>>> 8f87b45b7eac1264148a3f8ee76157ff0ffec532
+=======
+                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+>>>>>>> c268443 (Local changes before pull --rebase)
                     {project.features.map((feature: string, i: number) => (
                       <li key={i}>{feature}</li>
                     ))}
@@ -167,10 +193,14 @@ export default function ProjectDetail() {
                 <div>
                   <h3 className="text-xl font-medium mb-3">Challenges & Solutions</h3>
 <<<<<<< HEAD
+<<<<<<< HEAD
                   <ul className="list-disc list-inside space-y-2">
 =======
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
 >>>>>>> 8f87b45b7eac1264148a3f8ee76157ff0ffec532
+=======
+                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+>>>>>>> c268443 (Local changes before pull --rebase)
                     {project.challenges.map((challenge: string, i: number) => (
                       <li key={i}>{challenge}</li>
                     ))}
@@ -179,9 +209,12 @@ export default function ProjectDetail() {
               )}
             </CardContent>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 8f87b45b7eac1264148a3f8ee76157ff0ffec532
+=======
+>>>>>>> c268443 (Local changes before pull --rebase)
             <CardFooter className="flex flex-wrap gap-4 border-t pt-6">
               <Link href={project.githubUrl} target="_blank">
                 <Button className="gap-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 border-2 border-blue-200 dark:border-blue-700 shadow-[0_0_10px_rgba(59,130,246,0.3)] dark:shadow-[0_0_15px_rgba(59,130,246,0.4)]">
