@@ -1,26 +1,33 @@
-import { notFound } from "next/navigation"
-import { projects } from "@/data/projects"
-import { ArrowLeft, Github, ExternalLink } from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { motion } from "framer-motion"
+import { notFound } from "next/navigation";
+import { projects } from "@/data/projects";
+import { ArrowLeft, Github, ExternalLink } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import MotionCard from "./motion"; // <-- Import the client component
 
 type Props = {
-  params: { id: string }
-}
+  params: { id: string };
+};
 
 // Generate all static paths for export
 export async function generateStaticParams() {
-  return projects.map(project => ({ id: project.id }))
+  return projects.map((project) => ({ id: project.id }));
 }
 
 export default function ProjectDetail({ params }: Props) {
-  const project = projects.find(p => p.id === params.id)
+  const project = projects.find((p) => p.id === params.id);
 
-  if (!project) return notFound()
+  if (!project) return notFound();
 
   return (
     <div className="min-h-screen py-20 relative">
@@ -38,13 +45,19 @@ export default function ProjectDetail({ params }: Props) {
           </Button>
         </Link>
 
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+        {/* Only the Card is wrapped with the MotionCard client component */}
+        <MotionCard>
           <Card className="border-2 border-blue-200 dark:border-blue-700 shadow-[0_0_15px_rgba(59,130,246,0.4)] dark:shadow-[0_0_20px_rgba(59,130,246,0.5)] bg-white/90 backdrop-blur-sm dark:bg-slate-800/90">
             <div className="h-2 bg-gradient-to-r from-blue-500 to-purple-500" />
 
             {project.imageSrc && (
               <div className="relative w-full h-64 md:h-80">
-                <Image src={project.imageSrc} alt={project.title} fill className="object-cover" />
+                <Image
+                  src={project.imageSrc}
+                  alt={project.title}
+                  fill
+                  className="object-cover"
+                />
               </div>
             )}
 
@@ -112,8 +125,8 @@ export default function ProjectDetail({ params }: Props) {
               )}
             </CardFooter>
           </Card>
-        </motion.div>
+        </MotionCard>
       </div>
     </div>
-  )
+  );
 }
