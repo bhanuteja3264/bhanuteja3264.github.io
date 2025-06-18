@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
-  distDir: 'out',
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -11,10 +12,10 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true
+    unoptimized: true,
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/Portfolio/' : '',
-  basePath: process.env.NODE_ENV === 'production' ? '/Portfolio' : '',
-}
+  assetPrefix: isProd ? '/Portfolio/' : '',
+  basePath: isProd ? '/Portfolio' : '',
+};
 
-export default nextConfig
+export default nextConfig;
