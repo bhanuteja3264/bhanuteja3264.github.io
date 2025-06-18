@@ -130,7 +130,7 @@ export default function Hero() {
           className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-200 dark:border-blue-700 shadow-[0_0_20px_rgba(59,130,246,0.4)] dark:shadow-[0_0_30px_rgba(59,130,246,0.5)]"
         >
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-19%20at%2017.53.30_bee70577.jpg-JYR946OrxHNgPS03APBEiq7T1RdI5Z.jpeg"
+            src="/images/portfolio and resume.jpg"
             alt="Bhanu Teja Yerram"
             fill
             className="object-cover"

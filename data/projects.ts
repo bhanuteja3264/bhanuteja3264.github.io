@@ -189,6 +189,6 @@ export const projects = [
     githubUrl: "https://github.com/bhanuteja3264/Portfolio.git",
     liveUrl: "#",
     imageSrc:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-19%20at%2017.53.30_bee70577.jpg-JYR946OrxHNgPS03APBEiq7T1RdI5Z.jpeg",
+      "images/portfolio.jpg",
   },
 ]
