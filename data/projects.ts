@@ -42,7 +42,7 @@ export const projects = [
       "Interactive web interface for medical professionals",
       "Visualization of regions of interest in scans",
       "Support for multiple image formats",
-      "Detailed classification reports",
+      "Detailed classification reports ",
     ],
     challenges: [
       "Working with limited medical imaging datasets",
