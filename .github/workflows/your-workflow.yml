@@ -1,2 +1,2 @@
 - name: Export static site
-  run: npm run export
+- run: npm run build
